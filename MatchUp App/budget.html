@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matchup - Budget</title>
+
+    <link rel="stylesheet" href="budget.css">
+</head>
+
+<body>
+
+    <div class="budget-screen">
+
+        <!-- TOP BAR -->
+        <div class="budget-topbar">
+
+            <button class="back-button" onclick="history.back()">
+    <img src="Images/back-arrow.svg" alt="Back">
+</button>
+
+            <h1>Budget</h1>
+
+            <button class="more-button">
+                ...
+            </button>
+
+        </div>
+
+
+        <!-- MAIN CONTENT -->
+        <div class="budget-content">
+
+
+            <!-- TOTAL BUDGET -->
+            <div class="total-budget-card">
+
+                <div>
+                    <p>Total Budget</p>
+
+                    <h2>Rs. 2,000,000</h2>
+                </div>
+
+                <div class="money-icon">
+    <img src="Images/budget-money.svg" alt="Budget">
+</div>
+
+            </div>
+
+
+            <!-- SPENT -->
+            <div class="amount-row">
+
+                <span>Spent</span>
+
+                <strong class="spent">
+                    Rs. 1,200,000
+                </strong>
+
+            </div>
+
+
+            <!-- REMAINING -->
+            <div class="amount-row">
+
+                <span>Remaining</span>
+
+                <strong class="remaining">
+                    Rs. 800,000
+                </strong>
+
+            </div>
+
+
+            <!-- PROGRESS -->
+            <div class="progress-card">
+
+                <div class="progress-title">
+
+                    <span>Budget Progress</span>
+
+                    <strong>60%</strong>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div class="progress-fill"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECENT EXPENSES -->
+            <div class="recent-header">
+
+                <h3>Recent Expenses</h3>
+
+                <button>See All</button>
+
+            </div>
+
+
+            <div class="expenses-list">
+
+
+                <!-- EXPENSE 1 -->
+                <div class="expense">
+
+                    <div>
+                        <strong>Reception Hall</strong>
+                    </div>
+
+                    <div class="expense-right">
+
+                        <strong>Rs. 500,000</strong>
+
+                        <small>10 Aug 2026</small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EXPENSE 2 -->
+                <div class="expense">
+
+                    <div>
+                        <strong>Photography</strong>
+                    </div>
+
+                    <div class="expense-right">
+
+                        <strong>Rs. 250,000</strong>
+
+                        <small>08 Aug 2026</small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EXPENSE 3 -->
+                <div class="expense">
+
+                    <div>
+                        <strong>Decorations</strong>
+                    </div>
+
+                    <div class="expense-right">
+
+                        <strong>Rs. 150,000</strong>
+
+                        <small>05 Aug 2026</small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EXPENSE 4 -->
+                <div class="expense">
+
+                    <div>
+                        <strong>Catering</strong>
+                    </div>
+
+                    <div class="expense-right">
+
+                        <strong>Rs. 100,000</strong>
+
+                        <small>04 Aug 2026</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ADD EXPENSE -->
+            <button class="add-expense" onclick="window.location.href='add-expense.html'">
+
+    <img src="Images/add-expense.svg" alt="Add">
+
+    Add Expense
+
+</button>
+
+
+            <!-- BUDGET RESCUE -->
+            <div class="rescue-card" onclick="window.location.href='budget-rescue.html'">
+
+    <div>
+        <h3>Budget Rescue Mode</h3>
+        <p>Get smart suggestions to<br>fix your budget</p>
+    </div>
+
+    <span>›</span>
+
+</div>
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

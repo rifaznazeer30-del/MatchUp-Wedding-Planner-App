@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matchup - Add Expense</title>
+
+    <link rel="stylesheet" href="add-expense.css">
+</head>
+
+<body>
+
+    <div class="add-expense-screen">
+
+        <!-- HEADER -->
+        <div class="expense-header">
+
+            <button class="back-button" onclick="history.back()">
+    <img src="Images/back-arrow.svg" alt="Back">
+</button>
+
+            <h1>Add Expense</h1>
+
+        </div>
+
+
+        <!-- CONTENT -->
+        <div class="expense-content">
+
+            <p class="section-title">Expense Details</p>
+
+
+            <!-- CATEGORY -->
+            <label>Category</label>
+
+            <select class="input-field">
+                <option>Reception Hall</option>
+                <option>Photography</option>
+                <option>Decorations</option>
+                <option>Catering</option>
+                <option>Other</option>
+            </select>
+
+
+            <!-- AMOUNT -->
+            <label>Amount (Rs.)</label>
+
+            <input
+    type="text"
+    class="input-field"
+    value="50,000.00"
+    placeholder="Enter amount"
+>
+
+
+            <!-- DATE -->
+            <label>Date</label>
+
+            <input
+    type="text"
+    class="input-field date-input"
+    value="10 Aug 2026"
+>
+
+
+            <!-- PAYMENT METHOD -->
+            <label>Payment Method</label>
+
+            <select class="input-field">
+                <option>Cash</option>
+                <option>Card</option>
+                <option>Bank Transfer</option>
+                <option>Other</option>
+            </select>
+
+
+            <!-- NOTES -->
+            <label>Notes (Optional)</label>
+
+            <textarea
+                class="notes-input"
+                placeholder="Add a note..."
+            ></textarea>
+
+
+            <!-- RECEIPT -->
+            <div class="receipt-box">
+
+                <p>Attach Receipt (Optional)</p>
+
+                <label class="upload-box">
+
+                    <span class="plus">+</span>
+
+                    <span>Upload</span>
+
+                    <input type="file" accept="image/*">
+
+                </label>
+
+            </div>
+
+
+            <!-- ADD EXPENSE BUTTON -->
+            <button class="save-expense" onclick="saveExpense()">
+                Add Expense
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function saveExpense() {
+
+            alert("Expense added successfully!");
+
+            window.location.href = "budget.html";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

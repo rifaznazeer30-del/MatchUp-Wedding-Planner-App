@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matchup - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+</head>
+
+<body>
+
+    <div class="login-screen">
+
+        <div class="login-card">
+
+            <h1>Welcome Back!</h1>
+
+            <p class="login-subtitle">
+                Please login to continue
+            </p>
+
+            <!-- Email -->
+            <input
+                type="email"
+                id="email"
+                placeholder="Email address"
+            >
+
+            <!-- Password -->
+            <div class="password-container">
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                >
+
+                <span id="togglePassword">
+    <i class="fa-solid fa-eye"></i>
+</span>
+
+            </div>
+
+            <!-- Forgot Password -->
+            <a href="#" class="forgot-password">
+                Forgot Password?
+            </a>
+
+            <!-- Login Button -->
+            <button id="loginButton">
+                Login
+            </button>
+
+            <!-- Divider -->
+            <div class="divider">
+                <span></span>
+                <p>or continue with</p>
+                <span></span>
+            </div>
+
+            <!-- Social Login -->
+            <div class="social-login">
+
+    <button>
+        <img src="Images/google.svg" alt="Google">
+    </button>
+
+    <button>
+        <img src="Images/facebook.svg" alt="Facebook">
+    </button>
+
+    <button>
+        <img src="Images/apple.svg" alt="Apple">
+    </button>
+
+</div>
+
+            <!-- Sign Up -->
+            <p class="signup-text">
+                Don't have an account?
+                <a href="signup.html" id="signupLink">Sign Up</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

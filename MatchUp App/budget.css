@@ -1,0 +1,492 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background: #eeeeee;
+
+    font-family: Arial, sans-serif;
+
+    color: #111;
+}
+
+
+/* =========================
+   BUDGET SCREEN
+========================= */
+
+.budget-screen {
+
+    width: 366px;
+
+    height: 796px;
+
+    margin: 20px auto;
+
+    background: white;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.budget-topbar {
+
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 18px;
+}
+
+.budget-topbar h1 {
+
+    font-size: 18px;
+
+    margin: 0;
+
+    font-weight: 600;
+}
+
+.back-button,
+.more-button {
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    color: #222;
+}
+
+.more-button {
+
+    font-size: 22px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.budget-content {
+
+    padding: 0 17px 25px;
+}
+
+
+/* =========================
+   TOTAL BUDGET
+========================= */
+
+.total-budget-card {
+
+    height: 86px;
+
+    background: #f5f5f5;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 15px;
+
+    margin-bottom: 10px;
+}
+
+.total-budget-card p {
+
+    margin: 0 0 7px;
+
+    font-size: 12px;
+}
+
+.total-budget-card h2 {
+
+    margin: 0;
+
+    font-size: 24px;
+}
+
+.money-icon {
+
+    font-size: 48px;
+}
+
+
+/* =========================
+   AMOUNT ROWS
+========================= */
+
+.amount-row {
+
+    height: 38px;
+
+    background: #f5f5f5;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 12px;
+
+    margin-bottom: 5px;
+
+    font-size: 12px;
+}
+
+.amount-row strong {
+
+    font-size: 11px;
+}
+
+.spent {
+
+    color: #ff1f45;
+}
+
+.remaining {
+
+    color: #15c84b;
+}
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress-card {
+
+    background: #f5f5f5;
+
+    border-radius: 15px;
+
+    padding: 11px 12px;
+
+    margin-bottom: 25px;
+}
+
+.progress-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 12px;
+
+    margin-bottom: 8px;
+}
+
+.progress-title strong {
+
+    font-size: 11px;
+}
+
+.progress-bar {
+
+    width: 100%;
+
+    height: 7px;
+
+    background: #f3dce1;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.progress-fill {
+
+    width: 60%;
+
+    height: 100%;
+
+    background: #ff5275;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   RECENT EXPENSES
+========================= */
+
+.recent-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+}
+
+.recent-header h3 {
+
+    font-size: 12px;
+
+    margin: 0;
+}
+
+.recent-header button {
+
+    border: none;
+
+    background: transparent;
+
+    color: #ff5275;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   EXPENSE LIST
+========================= */
+
+.expenses-list {
+
+    background: #f5f5f5;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.expense {
+
+    min-height: 53px;
+
+    padding: 9px 13px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #dddddd;
+}
+
+.expense:last-child {
+
+    border-bottom: none;
+}
+
+.expense strong {
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.expense-right {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+}
+
+.expense-right strong {
+
+    font-size: 11px;
+}
+
+.expense-right small {
+
+    color: #999;
+
+    font-size: 9px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================
+   ADD EXPENSE
+========================= */
+
+.add-expense {
+
+    width: 228px;
+
+    height: 28px;
+
+    display: block;
+
+    margin: 12px auto 47px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: #ff5275;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.add-expense span {
+
+    font-size: 17px;
+
+    margin-right: 4px;
+}
+
+
+/* =========================
+   BUDGET RESCUE MODE
+========================= */
+
+.rescue-card {
+
+    width: 100%;
+
+    height: 67px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #f5f5f5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    text-align: left;
+
+    padding: 0 15px;
+
+    cursor: pointer;
+}
+
+.rescue-card strong {
+
+    font-size: 12px;
+}
+
+.rescue-card p {
+
+    margin: 4px 0 0;
+
+    color: #888;
+
+    font-size: 9px;
+
+    line-height: 13px;
+}
+
+.rescue-arrow {
+
+    font-size: 27px;
+
+    font-weight: 300;
+}
+/* EXACT FIGMA BUDGET ICONS */
+
+.back-button img {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+}
+
+.money-icon img {
+    width: 48px;
+    height: 48px;
+
+    object-fit: contain;
+}
+
+.add-expense {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.add-expense img {
+    width: 16px;
+    height: 16px;
+
+    object-fit: contain;
+}
+/* Budget Rescue Mode */
+.rescue-card {
+    width: 100%;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    border-radius: 14px;
+    min-height: 68px;
+    padding: 12px 16px;
+    margin-top: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.rescue-card h3 {
+    margin: 0 0 6px 0;
+    padding: 0;
+
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.1;
+
+    color: #111;
+}
+
+.rescue-card p {
+    margin: 0;
+    padding: 0;
+
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 1.3;
+
+    color: #777;
+}
+
+.rescue-card span {
+    font-size: 22px;
+    font-weight: 400;
+    color: #111;
+
+    margin-left: 10px;
+}

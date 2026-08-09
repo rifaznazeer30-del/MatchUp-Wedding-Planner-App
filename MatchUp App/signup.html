@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matchup - Sign Up</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+</head>
+
+<body>
+
+    <div class="signup-screen">
+
+        <div class="signup-card">
+
+            <h1>Create Account</h1>
+
+            <!-- Full Name -->
+            <input
+                type="text"
+                id="fullName"
+                placeholder="Full Name"
+            >
+
+            <!-- Email -->
+            <input
+                type="email"
+                id="signupEmail"
+                placeholder="Email"
+            >
+
+            <!-- Mobile Number -->
+            <input
+                type="tel"
+                id="mobileNumber"
+                placeholder="Mobile Number"
+            >
+
+            <!-- Password -->
+            <div class="signup-password">
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="Password"
+                >
+
+                <span id="signupPasswordEye">
+    <i class="fa-solid fa-eye"></i>
+</span>
+
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="signup-password">
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm Password"
+                >
+
+                <span id="confirmPasswordEye">
+    <i class="fa-solid fa-eye"></i>
+</span>
+
+            </div>
+
+            <!-- Password Error -->
+            <p id="passwordError">
+                *Password Does Not Match
+            </p>
+
+            <!-- Continue -->
+            <button id="continueButton">
+                Continue
+            </button>
+
+            <!-- Sign In -->
+            <div class="already-account">
+
+                <p>Already have an account?</p>
+
+                <a href="login.html">
+                    Sign In
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
